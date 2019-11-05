@@ -1,0 +1,28 @@
+.user-profile {
+    margin-top: 30px;
+    width: 90%;
+    height: 40px;
+    padding: 5%;
+    // background-color: green;
+    overflow: hidden;
+}
+
+.user-profile-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 2000px;
+    background: url('../../../assets/images/adjarabet_logo_250x250.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-profile-name {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    text-align: center;
+}
