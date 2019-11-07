@@ -5,16 +5,25 @@ $body-color: #121314;
 $scrollbar-color: #333333;
 $scrollbar-track-color: #212225;
 
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/fonts/montserrat/Montserrat-Medium.ttf');
+}
 
-
-@media only screen and (max-width: 1281px) {
-    nav {
+@media only screen and (max-width: 1281px) { // +50%
+    /*nav {
       width: 15vw!important
     }
     main {
         width: 83vw!important;
     }
-
+    .user-profile-name > p {
+        font-size: 1.1vw!important;
+    }
+    .user-profile-avatar {
+        width: 3vw!important;
+        height: 3vw!important;
+    }*/
 }
 
 
@@ -24,6 +33,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Montserrat;
 }
 
 header {
@@ -55,20 +65,20 @@ footer {
 
 nav {
     display: inline-block;
-    width: 10vw;
+    width: 12vw;
     height: calc(100% - 60px);
     position: fixed;
     top: 60px;
     left: 0px;
     z-index: 9998;
     background-color: $grey;
-    border-right: 3px solid black;;
+    border-right: 1.5px solid black;;
     transition-duration: 0.08s;
 }
 
 main {
     display: inline-block;
-    width: 88vw;
+    width: 86vw;
     height: calc(100vh - 120px);
     margin-top: 60px;
     float: right;

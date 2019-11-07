@@ -1,21 +1,26 @@
 .user-profile {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 90%;
-    height: 40px;
+    //height: 40px;
     padding: 5%;
     // background-color: green;
-    overflow: hidden;
+    //overflow: hidden;
+}
+
+section {
+    margin-top: 1vw;
 }
 
 .user-profile-avatar {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+    display: block;
+    width: 3vw;
+    height: 3vw;
     background-color: red;
     border-radius: 2000px;
     background: url('../../../assets/images/adjarabet_logo_250x250.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 3.5vw;
 }
 
 .user-profile-name {
@@ -23,6 +28,62 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    width: calc(100% - 40px);
+    width: 100%;
     text-align: center;
+}
+
+.user-profile-name > p {
+    font-size: 0.7vw;
+    overflow: hidden;
+}
+
+.main-section {
+    font-size: 0.6vw;
+}
+
+.menu {
+    display: block;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background-color: red
+}
+
+.menu > h1 {
+    padding-left: 1vw;
+}
+
+.main-section-header {
+    padding: 1vw;
+}
+
+.main-section-header > h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section-div {
+    padding: 1vw;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.main-section-div > h1 {
+    margin: 0;
+    padding: 0;
+    color: #7c7d81;
+}
+
+.main-section-div:hover {
+    background-color:#2c2d30;
+    border-left: 2px solid white;
+}
+
+// .main-section-div:hover ~ .main-section-div >h1 {
+//     color: #ffffff
+// }
+
+#a:hover + #b {
+	color: white;
 }
